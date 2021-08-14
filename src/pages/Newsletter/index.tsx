@@ -91,7 +91,7 @@ const Newsletter: React.FC = (props) => {
 
                 </Box>
                 <Box className={classes.imageSide}>
-                    <img src={process.env.PUBLIC_URL + '/frontend-challenge/assets/images/bg-newsletter.jpg'} alt='form bg' className={classes.bgImg} />
+                    <img src={'/frontend-challenge/assets/images/bg-newsletter.jpg'} alt='form bg' className={classes.bgImg} />
                 </Box>
             </Paper>
 
