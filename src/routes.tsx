@@ -2,7 +2,7 @@ import { Container } from "@material-ui/core"
 import { lazy } from "react"
 import { Suspense } from "react"
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
     Switch,
 } from "react-router-dom"
@@ -14,9 +14,9 @@ const NotFound = lazy(() => import('./pages/404'))
 
 
 const Scaffold: React.FC = () => {
-    
+
     return (
-        <Router basename="/frontend-challenge">
+        <Router  >
             <Container maxWidth='lg'>
                 <Suspense fallback={<PageLoading />}>
                     <Switch>

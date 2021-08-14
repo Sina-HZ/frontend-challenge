@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import queryString from 'query-string'
 import Step1 from "./Step1";
 import Step2 from "./Step2";
-import bgNewsLetter from '../../assets/images/bg-newsletter.jpg'
 
 const lorem = `لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.`
 
@@ -92,7 +91,7 @@ const Newsletter: React.FC = (props) => {
 
                 </Box>
                 <Box className={classes.imageSide}>
-                    <img src={bgNewsLetter} alt='form bg' className={classes.bgImg} />
+                    <img src={'/assets/images/bg-newsletter.jpg'} alt='form bg' className={classes.bgImg} />
                 </Box>
             </Paper>
 
