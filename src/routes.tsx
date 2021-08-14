@@ -16,7 +16,7 @@ const NotFound = lazy(() => import('./pages/404'))
 const Scaffold: React.FC = () => {
 
     return (
-        <Router  >
+        <Router basename='/frontend-challenge' >
             <Container maxWidth='lg'>
                 <Suspense fallback={<PageLoading />}>
                     <Switch>
