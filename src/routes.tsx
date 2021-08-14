@@ -2,7 +2,7 @@ import { Container } from "@material-ui/core"
 import { lazy } from "react"
 import { Suspense } from "react"
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Route,
     Switch,
 } from "react-router-dom"
@@ -14,12 +14,9 @@ const NotFound = lazy(() => import('./pages/404'))
 
 
 const Scaffold: React.FC = () => {
-    console.log(process.env)
 
     return (
-        <Router
-            // basename={process.env.PUBLIC_URL}
-        >
+        <Router >
             <Container maxWidth='lg'>
                 <Suspense fallback={<PageLoading />}>
                     <Switch>
