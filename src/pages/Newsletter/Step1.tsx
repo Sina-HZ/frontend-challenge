@@ -55,7 +55,6 @@ const Step1 = () => {
 
 
     const _onSubmit: SubmitHandler<Pick<IUser, 'name' | 'age'>> = (data: any) => {
-        console.log(data)
         UserStore.update(data);
         history.push('/newsletter?step=2', data)
     }

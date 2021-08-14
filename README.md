@@ -1,49 +1,22 @@
-# Sheypoor frontend-challenge
+# frontend-challenge
 
-The task is to implement a **2 step UI wizard** to create a user account. There is no UX or UI constraints, this is 
-up to you to decide. 
+## Available Scripts
 
-The User information that we need to collect is described in the User type:
-```
-interface User {
-  name: string
-  age: number
-  email: string
-  newsletter: 'daily' | 'weekly' | 'monthly'
-}
-```
-You can, for example collect the name and age in the first step and then email and newsletter in the second step.
-You may use a routing library such that every step is a separate route but this is completely optional and not 
-required.
+In the project directory, you can run:
 
-There is a dummy `sdk` package(implemented in the /sdk folder) which exports a `createUser` function. This function returns a `Promise`.
-Use it to simulate a request that creates a user account. 
-Ex:
+### `yarn start`
 
-```
-import { createUser } from 'sdk'
 
-const details = {...}
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-createUser(details).then( ... )
-```
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-The focus should be on code style and the way you approach the problem implementation wise.
-Feel free to use any other helper library although ideally the more code you write yourself the better.
+### `yarn build`
 
-### Implementation requirements:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- use either vanilla Javascript or one of the frameworks we use at Sheypoor(React / Knockout.js) or whatever you like
-- use npm to manage dependencies, there is pre-initialized package.json included in this repo
-
-### Getting started:
-
-- Fork the repo
-- Implement your solution
-- Create a PR against this repo
-
-Optional: build the project and deploy (ie make it available as a static project) on 
-[Github Pages](https://pages.github.com/), otherwise please provide detailed instructions
-on how to start the project locally.
-
-Any questions please contact us via email (jobs AT sheypoor.com) :)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!

@@ -45,7 +45,8 @@ const Step2 = () => {
         try {
             setLoading(true);
             UserStore.update(data);
-            await createUser(UserStore.getUser());
+            const result = await createUser(UserStore.getUser());
+            console.log(result);
             setLoading(false)
             setSubmited(true)
         } catch (error) {
