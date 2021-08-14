@@ -14,9 +14,12 @@ const NotFound = lazy(() => import('./pages/404'))
 
 
 const Scaffold: React.FC = () => {
-    
+    console.log(process.env)
+
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router
+            // basename={process.env.PUBLIC_URL}
+        >
             <Container maxWidth='lg'>
                 <Suspense fallback={<PageLoading />}>
                     <Switch>
